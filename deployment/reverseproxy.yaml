@@ -16,7 +16,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: docker.io/ndiklasthecoder/udagram-reverseproxy:v3
+      - image: docker.io/ndiklasthecoder/udagram-reverseproxy:v40
         name: reverseproxy
         imagePullPolicy: Always
         resources:

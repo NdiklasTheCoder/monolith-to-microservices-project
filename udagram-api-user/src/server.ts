@@ -28,11 +28,17 @@ import {V0_USER_MODELS} from './controllers/v0/model.index';
       'Origin', 'X-Requested-With',
       'Content-Type', 'Accept',
       'X-Access-Token', 'Authorization',
+      'Access-Control-Allow-Origin', '*',
     ],
     methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
     preflightContinue: true,
     origin: '*',
   }));
+
+  // app.use(cors());
+  // app.options('*', cors());
+
+
 
   app.use('/api/v0/', IndexRouter);
 
